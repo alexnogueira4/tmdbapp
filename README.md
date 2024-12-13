@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TMDbApp
 
-## Getting Started
+TMDbApp is a web application built using Next.js, React, and various development tools. This README provides an overview of the technologies used, as well as instructions on how to set up, run, and develop the project.
 
-First, run the development server:
+## Technologies Used
 
-```bash
+### Frontend
+
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **React**: A JavaScript library for building user interfaces.
+- **ReactDOM**: The entry point to the DOM and server renderers for React.
+
+### Development Tools
+
+- **TypeScript**: A superset of JavaScript that adds static typing.
+- **ESLint**: A tool for identifying and fixing linting errors in JavaScript code.
+- **Prettier**: A code formatter to ensure consistent code style.
+- **Jest**: A JavaScript testing framework for writing and running tests.
+- **React Testing Library**: A set of helpers for testing React components.
+
+## Project Setup
+
+### Prerequisites
+
+- **Node.js**: Ensure you have Node.js installed (preferably the latest LTS version).
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```
+   git clone https://github.com/your-username/tmdbapp.git
+   cd tmdbapp
+   ```
+
+2. **Install dependencies:**
+   ```
+   npm install
+   ```
+
+### Running the Application
+
+#### Development Mode:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This command starts the development server with Turbopack for fast refresh and rebuilds.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Code Quality
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Linting:
 
-## Learn More
+```
+npm run lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+This command runs ESLint to analyze your code for potential errors and coding style issues.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Formatting:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+npm run format
+```
 
-## Deploy on Vercel
+This command runs Prettier to format your code according to the defined style rules.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Testing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Run Tests:
+
+```
+npm run test
+```
+
+This command runs Jest in watch mode, which is useful during development to see instant feedback on your tests.
+
+#### Run Tests in CI Mode:
+
+```
+npm run test:ci
+```
+
+This command runs Jest in continuous integration mode, suitable for running in CI/CD pipelines.
+
+### Project Structure
+
+- **pages/**: Contains Next.js pages.
+- **components/**: Reusable React components.
+- **styles/**: CSS and styling files.
+- **\_\_tests\_\_/**: Contains test files for your components.
+
+### Configuration
+
+#### ESLint
+
+The ESLint configuration is extended from eslint-config-next and includes eslint-config-prettier to disable ESLint rules that might conflict with Prettier.
+
+#### Prettier
+
+Prettier is configured to format code on every run of the format script.
+
+#### Jest
+
+Jest is configured with jest-environment-jsdom to test React components in a DOM-like environment.

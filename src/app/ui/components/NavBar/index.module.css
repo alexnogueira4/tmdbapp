@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #212121;
+  color: #fff;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menuButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+  border-radius: 2px;
+}
+
+.menuButton .dot {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 2px 0;
+}
+
+.menuButton:focus,
+.menuButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.pageTitle {
+  /* ou o nome da classe do seu componente */
+  display: flex;
+  align-items: center; /* alinha verticalmente o ícone e o título */
+}
+
+.pageTitle svg {
+  /* estilizando o ícone */
+  margin-right: 10px; /* adiciona espaço entre o ícone e o título */
+}
