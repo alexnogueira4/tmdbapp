@@ -29,7 +29,7 @@ TMDbApp is a web application built using Next.js, React, and various development
 1. **Clone the repository:**
 
    ```
-   git clone https://github.com/your-username/tmdbapp.git
+   git clone https://github.com/alexnogueira4/tmdbapp.git
    cd tmdbapp
    ```
 
@@ -37,6 +37,20 @@ TMDbApp is a web application built using Next.js, React, and various development
    ```
    npm install
    ```
+
+### Environment Variables
+
+To run the project, you need to configure environment variables. Copy the .env.example file to .env and update the NEXT_PUBLIC_API_KEY with your TMDB API key.
+
+```
+cp .env.example .env
+```
+
+Then, open the .env file and set your TMDB API key:
+
+```
+NEXT_PUBLIC_API_KEY=your_tmdb_api_key
+```
 
 ### Running the Application
 
